@@ -21,7 +21,7 @@ class ItemTest(BaseTest):
 
             self.assertIsNone(ItemModel.find_by_name('test'))
 
-    def test_store_relationshi(self):
+    def test_store_relationship(self):
         with self.app_context():
             store = StoreModel('test_store')
             item = ItemModel('test', 19.99, 1)
